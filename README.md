@@ -1,1 +1,3 @@
-# integracion-continua-ventas
+# Integracion-continua-ventas
+
+Repositoria creado para el desarrollo del modulo de integracióon continua
