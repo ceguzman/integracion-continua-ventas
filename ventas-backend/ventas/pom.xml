@@ -42,7 +42,8 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-:::wq			</plugin>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 
