@@ -45,7 +45,7 @@ public class AuthorityResource {
     }
 
     @PutMapping("/authority")
-    public ResponseEntity<Authority> updateRegional(@RequestBody Authority authority) {
+    public ResponseEntity<Authority> updateAuthority(@RequestBody Authority authority) {
         Authority result = authorityRepository.save(authority);
         return ResponseEntity.ok().body(result);
     }
