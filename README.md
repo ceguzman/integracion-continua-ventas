@@ -4,4 +4,4 @@
 ## Faber Edison Ordoñez Alvarado
 ## Carlos Esteban Guzman Baquero
 
-Repositorio creado para el desarrollo del modulo de integracióon continúa
+Repositorio creado para el desarrollo del modulo de integración continúa
