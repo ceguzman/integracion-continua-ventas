@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://age-of-empires-2-api.herokuapp.com/",
+        "secure":true,
+        "changeOrigin":true
+   }
+}
