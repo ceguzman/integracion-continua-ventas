@@ -14,6 +14,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Find Maven
-        run: ls
+        run: cd /ventas-backend/ventas
       - name: Build with Maven  
         run: mvn --batch-mode --update-snapshots package
