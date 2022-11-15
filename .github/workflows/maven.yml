@@ -16,4 +16,4 @@ jobs:
       - name: Find Maven
         run: cd ventas-backend/ventas
       - name: Build with Maven  
-        run: mvn --batch-mode --update-snapshots package
+        run: mvn -f ventas-backend/ventas/pom.xml compile
