@@ -1,15 +1,29 @@
 package co.edu.poli.ventas.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Authority implements Serializable {
 
     @Id
     private String name;
+
+    /**
+     * Agredando la realcion
+     * de muchos a muchos con  Authority Y User
+     */
+    @JsonIgnore
+    @ManyToMany(mappedBy = "authorityList",fetch = FetchType.LAZY)
+    private Set<User> userList;
+
 
     public Authority() {
     }
@@ -24,6 +38,14 @@ public class Authority implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<User> getUserList() {
+        return userList;
+    }
+
+    public void setUserList(Set<User> userList) {
+        this.userList = userList;
     }
 
     @Override
