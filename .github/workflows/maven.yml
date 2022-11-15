@@ -13,5 +13,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Build with Maven
+      - name: Find Maven
+        run: mvn -f /home/runner/work/integracion-continua-ventas/integracion-continua-ventas/ventas-backend/ventas/pom.xml
+      - name: Build with Maven  
         run: mvn --batch-mode --update-snapshots package
