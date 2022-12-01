@@ -9,9 +9,18 @@ import { environment } from 'src/environments/environment';
 export class BaseService {
 
   constructor(private http:HttpClient) { }
-
   obtenerParametros(parametros?:any):Observable<any>{
-    return this.http.get('api/v1/civilizations',{
+    return this.http.get(environment.apiPokemon+'pokemon/',{
+    // return this.http.get(environment.apiAgeOfEmpires+'civilizations',{
+      // params:{...parametros},
+    // headers:headers,
+  })//.pipe(map(response => response),
+    /// catchError(error => error)
+  //)  
+  }
+  obtenerParametros2(parametros?:any):Observable<any>{
+    return this.http.get('/api/v1/civilizations',{
+    // return this.http.get(environment.apiAgeOfEmpires+'civilizations',{
       // params:{...parametros},
     // headers:headers,
   }).pipe(map(response => response),
