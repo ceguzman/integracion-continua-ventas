@@ -28,8 +28,8 @@ export class AppComponent implements OnInit,OnDestroy {
     .pipe(takeUntil(this.unsubscribe$))
     .subscribe(
       (response)=>{this.productos = response.civilizations
-        console.log(response) 
+        console.log('Response okr',response) 
   },
-      (error)=>{console.log(error)})
+      (error)=>{console.log('Sali por el error',error)})
   }
 }
