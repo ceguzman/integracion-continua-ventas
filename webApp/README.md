@@ -8,6 +8,8 @@ docker build . -t webapp:latest
 #### Levantar la imagen en el puerto que se inidque
 docker run -d -p 4200:4200 webapp:latest
 
+ Generar modulo con sus rutas
+ ng g m ventas --routing
 
 # WebApp
 
