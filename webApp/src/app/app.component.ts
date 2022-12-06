@@ -15,7 +15,7 @@ export class AppComponent implements OnInit,OnDestroy {
   constructor(private baseService:BaseService){}
 
   ngOnInit(): void {
-     this.cargarParametros()
+    //  this.cargarParametros()
   }
 
   ngOnDestroy(): void {
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit,OnDestroy {
     .pipe(takeUntil(this.unsubscribe$))
     .subscribe(
       (response)=>{this.productos = response.civilizations
-        console.log('Response okr',response) 
+        // console.log('Response okr',response) 
   },
       (error)=>{console.log('Sali por el error',error)})
   }

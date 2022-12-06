@@ -1,1 +1,13 @@
-<p>productos works!</p>
+<h1 class="ml-6">Productos Disponibles</h1>
+<div class="grid justify-content-center">
+    <article *ngFor="let producto of productos" class="border-500 hover:border-700 border-3 border-round col-12 md:col-6 lg:col-3 m-3 p-4">
+        <h3>{{producto.title}}</h3>
+        <img src="{{producto.images[0]}}" alt="" width="200" height="200" class="mx-auto">
+        
+        
+        <h4 class="mt-4">Precio {{producto.price}}</h4>
+        <p>
+            <strong>Descripción</strong> <br>{{producto.description}}</p>
+    
+    </article>
+</div>

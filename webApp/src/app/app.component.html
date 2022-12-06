@@ -25,8 +25,18 @@
           <li>
             <a
               pripple=""
+              routerLink="/"
               class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
               ><i class="pi pi-home mr-2"></i><span>Home</span
+              ><span class="p-ink"></span
+            ></a>
+          </li>
+          <li>
+            <a
+              pripple=""
+              class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
+              routerLink="/productos"
+              ><i class="pi pi-briefcase mr-2"></i><span>Productos</span
               ><span class="p-ink"></span
             ></a>
           </li>
@@ -39,11 +49,11 @@
               leavetoclass="hidden"
               leaveactiveclass="fadeout"
               class="p-element p-ripple flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-              ><i class="pi pi-users mr-2"></i><span>Customers</span
+              ><i class="pi pi-users mr-2"></i><span>Clientes</span
               ><i class="pi pi-angle-down ml-auto lg:ml-3"></i
               ><span class="p-ink"></span
             ></a>
-            <ul
+            <!-- <ul
               class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:absolute bg-gray-900 hidden origin-top w-full lg:w-15rem cursor-pointer lg:border-1 border-gray-800">
               <li>
                 <a
@@ -90,15 +100,7 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              pripple=""
-              class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-              ><i class="pi pi-calendar mr-2"></i><span>Calendar</span
-              ><span class="p-ink"></span
-            ></a>
+            </ul> -->
           </li>
           <li>
             <a
@@ -123,7 +125,7 @@
               /></span>
             </div>
           </li>
-          <li class="border-top-1 border-gray-800 lg:border-top-none">
+          <!-- <li class="border-top-1 border-gray-800 lg:border-top-none">
             <a
               pripple=""
               class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
@@ -139,13 +141,15 @@
               </div>
               <span class="p-ink"></span
             ></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
     <ul
       class="list-none py-3 px-5 m-0 surface-section flex align-items-center font-medium overflow-x-auto border-top-1 border-bottom-1 surface-border">
-      <li class="pr-3">
+
+      <p class="mx-auto">Somos Tu Mejor Elección para la administración de ventas</p>
+      <!-- <li class="pr-3">
         <a class="cursor-pointer"><i class="pi pi-home text-blue-500"></i></a>
       </li>
       <li class="px-2"><i class="pi pi-angle-right text-500"></i></li>
@@ -159,11 +163,11 @@
       <li class="px-2"><i class="pi pi-angle-right text-500"></i></li>
       <li class="px-2">
         <a class="cursor-pointer text-900 white-space-nowrap">Level 1</a>
-      </li>
+      </li> -->
     </ul>
     <main class="p-5 flex flex-column flex-auto">
       <div
-        class="border-2 border-dashed surface-border border-round surface-section flex-auto">
+        class="border-2 border-dashed surface-border border-round surface-section flex-auto p-6">
         <router-outlet></router-outlet>
       </div>
     </main>
