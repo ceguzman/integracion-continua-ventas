@@ -19,12 +19,21 @@ public class AuthorityResource {
     @Autowired
     AuthorityRepository authorityRepository;
 
+    /**
+     * get all Authority
+     * @return list the Authority
+     */
     @GetMapping("/authority")
     public ResponseEntity<List<Authority>> findAll() {
         List<Authority> authorityList = (List<Authority>) authorityRepository.findAll();
         return ResponseEntity.ok().body(authorityList);
     }
 
+    /**
+     * find by id
+     * @param name for find with id
+     * @return a object
+     */
     @GetMapping("/authority/Idauthority/{name}")
     public ResponseEntity<Authority> findById(@PathVariable String name) {
         Optional<Authority> authority = authorityRepository.findById(name);

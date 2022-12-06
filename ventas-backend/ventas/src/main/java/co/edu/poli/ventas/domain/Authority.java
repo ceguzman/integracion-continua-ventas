@@ -17,7 +17,7 @@ public class Authority implements Serializable {
     private String name;
 
     /**
-     * Agredando la realcion
+     * Agredando la realacion
      * de muchos a muchos con  Authority Y User
      */
     @JsonIgnore

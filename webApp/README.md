@@ -1,3 +1,16 @@
+# Proyecto Dockerizaddo
+
+Para levantar la imagen se requiere tener docker instalado y posteriormente ejecutar los siguientes comandos en la terminal
+
+#### Construir imagen docker
+docker build . -t webapp:latest
+
+#### Levantar la imagen en el puerto que se inidque
+docker run -d -p 4200:4200 webapp:latest
+
+ Generar modulo con sus rutas
+ ng g m ventas --routing
+
 # WebApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
