@@ -29,6 +29,11 @@ public class AuthorityResource {
         return ResponseEntity.ok().body(authorityList);
     }
 
+    /**
+     *
+     * @param name
+     * @return
+     */
     @GetMapping("/authority/Idauthority/{name}")
     public ResponseEntity<Authority> findById(@PathVariable String name) {
         Optional<Authority> authority = authorityRepository.findById(name);
