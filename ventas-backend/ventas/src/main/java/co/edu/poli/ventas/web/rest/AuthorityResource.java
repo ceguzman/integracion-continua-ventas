@@ -30,9 +30,9 @@ public class AuthorityResource {
     }
 
     /**
-     *
-     * @param name
-     * @return
+     * find by id
+     * @param name for find with id
+     * @return a object
      */
     @GetMapping("/authority/Idauthority/{name}")
     public ResponseEntity<Authority> findById(@PathVariable String name) {
