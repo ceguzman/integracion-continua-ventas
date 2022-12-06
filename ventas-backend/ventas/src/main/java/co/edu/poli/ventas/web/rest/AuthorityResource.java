@@ -19,6 +19,10 @@ public class AuthorityResource {
     @Autowired
     AuthorityRepository authorityRepository;
 
+    /**
+     * get all Authority
+     * @return list the Authority
+     */
     @GetMapping("/authority")
     public ResponseEntity<List<Authority>> findAll() {
         List<Authority> authorityList = (List<Authority>) authorityRepository.findAll();
